@@ -1,0 +1,73 @@
+/* 菜单样式 */
+#menu {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 25px 40px;
+}
+
+#menu span {
+    padding: 5px 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #838383;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: linear-gradient(120deg, rgb(156, 220, 255) 0%, rgb(255, 140, 250) 70%);
+}
+
+.active {
+    color: #0084ff !important;
+}
+
+/* 相册瀑布流样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 20px auto;
+    columns: 4;
+    column-gap: 20px;
+}
+
+.container .box {
+    width: 100%;
+    margin-bottom: 20px;
+    break-inside: avoid;
+}
+
+.container .box img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.container .box video {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.item {
+    display: none;
+}
+
+@media (max-width:1600px) {
+    .container {
+        width: calc(100% - 40px);
+    }
+}
+
+@media (max-width:1200px) {
+    .container {
+        columns: 3;
+    }
+}
+
+@media (max-width:480px) {
+    .container {
+        columns: 1;
+    }
+}
